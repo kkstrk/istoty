@@ -1,0 +1,61 @@
+---
+import '@fontsource/inter';
+
+const { page } = Astro.props;
+const home = 'Istoty';
+const title = [page, home].filter(Boolean).join(' | ');
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+		<header>
+			<h1>
+				<a href="/">{home}</a>
+			</h1>
+		</header>
+		<main>
+			<slot />
+		</main>
+	</body>
+</html>
+
+<style is:global>
+	:root {
+		--margin: 2rem;
+	}
+	body {
+		margin: 0;
+		padding: 0;
+		min-height: 100vh;
+		overflow-x: hidden;
+		overflow-y: auto;
+		font-family: 'Inter', sans-serif, system-ui;
+		background-color: #F6F6F6;
+		display: flex;
+		flex-direction: column;
+	}
+	header {
+		margin: var(--margin);
+		flex-shrink: 0;
+	}
+	main {
+		flex-grow: 1;
+		display: flex;
+		flex-direction: column;
+	}
+	h1 {
+		margin: 0;
+	}
+	a {
+		color: inherit;
+		text-decoration: none;
+	}
+</style>
