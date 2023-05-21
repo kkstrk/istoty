@@ -12,7 +12,7 @@ const cloudinary = new Cloudinary({
 const data = _data.map(({ id, title, coverImage }) => ({
 	id,
 	title,
-	href: `/title/${id}`,
+	href: `/istoty/title/${id}`,
 	src: cloudinary.image(coverImage)
 		.resize(fit().width(800))
 		.toURL(),
