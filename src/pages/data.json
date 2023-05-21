@@ -1,58 +1,8 @@
 [
     {
-        "id": "001",
-        "title": "FOLIE-S",
-        "images": [
-            "v1679344395/FOLIE-S/aTevOCYc",
-            "v1679344395/FOLIE-S/LaMBLecH",
-            "v1679344395/FOLIE-S/ySIonsIo",
-            "v1679344395/FOLIE-S/ngHtMAZi",
-            "v1679344395/FOLIE-S/thERygMA"
-        ],
-        "text": [
-            [
-                "2022, Belgium",
-                "Production: Lena Piazza, Lou",
-                "Dancers:",
-                "Music:",
-                "Light design:",
-                "Video:",
-                "Post-production:",
-                "Support: Kunsthumaniora Brussel",
-                "Photography: Olympe Tits"
-            ]
-        ],
-        "videos": [
-            "https://www.youtube.com/embed/sOXEn-1waIc"
-        ]
-    },
-    {
-        "id": "002",
-        "title": "THE NEST",
-        "images": [
-            "v1679485413/THE NEST/ETersbRE",
-            "v1679485413/THE NEST/NIvisIte",
-            "v1679485413/THE NEST/NdIfLICK",
-            "v1679485413/THE NEST/tdOMaShO",
-            "v1679485413/THE NEST/oRiUMARc"
-        ],
-        "text": [
-            [
-                "2022, Belgium / Poland",
-                "Production: Ewa Wróblewska",
-                "Dancer: Siemke Van Reyn",
-                "Architecture: Studio Corkinho",
-                "Post-production: Katharina Arbeithuber",
-                "Music: Sebastien Beliah"
-            ]
-        ],
-        "videos": [
-            "https://www.youtube.com/embed/YdjRkP5OmkA"
-        ]
-    },
-    {
-        "id": "003",
+        "id": "i-see-you",
         "title": "I SEE YOU",
+        "coverImage": "v1679485600/I SEE YOU/THriCalP_br4bcn",
         "images": [
             "v1679485600/I SEE YOU/AirADRat",
             "v1679485600/I SEE YOU/ePrIpTIn",
@@ -75,20 +25,70 @@
             "v1679485600/I SEE YOU/NDREsETR"
         ],
         "text": [
+            ["A dance-show inspired by the Avatar’s world, inviting the audience to follow emotions through four unpredictable nature’s elements as water, air, earth and fire. It is a visual and sensory journey in finding an innate power within oneself."],
             [
-                "2022-23, Poland",
-                "Production: Lumina Park",
-                "Art Direction: Ewa Wróblewska",
-                "Choreography: Aleksandra Kuś",
-                "Dancers: Zuzanna Nir, Oliwia Miarka, Ewa Wróblewska",
-                "Music: Łukasz Kosturek, Amelia Salloum",
-                "Costume: Poldi Podolska",
-                "Photography: Tobiasz Papuczys",
-                "Video: Filmmejkers"
+                "Producer: Lumina Park",
+                "Artistic Director & Assistant Choreographer: Ewa Wróblewska",
+                "Choreographer: Aleksandra Kus",
+                "Dancer: Zuzanna Nir, Oliwia Miarka, Ewa Wróblewska",
+                "Musician: Lukasz Kosturek, Amelia Salloum",
+                "Costume designer: Poldi Podolska",
+                "Photographer: Tobiasz Papuczys",
+                "Camera Operator & Video Editor: Filmmejkers"
             ]
         ],
         "videos": [
             "https://www.youtube.com/embed/PfYKnO1sGm8"
+        ]
+    },
+    {
+        "id": "follie-s",
+        "title": "FOLIE-S",
+        "coverImage": "v1679344395/FOLIE-S/EndleweL_s64mre",
+        "images": [
+            "v1679344395/FOLIE-S/aTevOCYc",
+            "v1679344395/FOLIE-S/LaMBLecH",
+            "v1679344395/FOLIE-S/ngHtMAZi",
+            "v1679344395/FOLIE-S/thERygMA"
+        ],
+        "text": [
+            ["“Let yourself be carried away by a dark and disturbing world… Created around an alphabet system, the names of the movements are in fact the main themes of these. Around this, this very personal composition hides many words, sentences, emotions. This is what I compose for, not knowing how to express myself otherwise.” -Lou Lévêque"],
+            [
+                "Producer: Léna Piazza, Choreographer & Dancer: Léna Piazza,  Lora Ensing,",
+                "Tom Huppermans, Ewa Wróblewska, Siemke Van Reyn",
+                "Musician: William Adji, Claudia Mouton, Lucía Alonso Hernandez,",
+                "Lorraine Janier Dubry, Valéria Di Forti",
+                "Light designer & Camera Operator: Katharina Arbeithuber",
+                "Video Editor:  Lou Lévêque",
+                "Photographer: Olympe Tits"
+            ]
+        ],
+        "videos": [
+            "https://www.youtube.com/embed/sOXEn-1waIc"
+        ]
+    },
+    {
+        "id": "the-nest",
+        "title": "THE NEST",
+        "coverImage": "v1679485413/THE NEST/pROtyPen_yzzucr",
+        "images": [
+            "v1679485413/THE NEST/tdOMaShO",
+            "v1679485413/THE NEST/ETersbRE",
+            "v1679485413/THE NEST/NIvisIte",
+            "v1679485413/THE NEST/NdIfLICK",
+            "v1679485413/THE NEST/tdOMaShO"
+        ],
+        "text": [
+            ["An ode to a French philosopher of poetry Gaston Bachelard as well as a Japanese wabi-sabi principle of Studio Corkinho… So, what makes you feel at home within your-self? Through stripped aesthetics, the dance translates inner worlds of silence, meaning and meditation."],
+            [
+                "Artistic Director: Ewa Wróblewska",
+                "Video Editor: Katharina Arbeithuber",
+                "Dancer: Siemke Van Reyn",
+                "Musician: Sebastien Beliah"
+            ]
+        ],
+        "videos": [
+            "https://www.youtube.com/embed/YdjRkP5OmkA"
         ]
     }
 ]
