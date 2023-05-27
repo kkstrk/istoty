@@ -44,13 +44,13 @@ const data = _data.map(({ id, title, coverImage }) => ({
 		drag: true,
 		gap: 'var(--margin-vertical)',
 		padding: { left: 'var(--margin-horizontal)' },
+		releaseWheel: true,
 		rewind: true,
+		wheel: true,
+		wheelSleep: 250,
         autoWidth: true,
         focus: 'center',
         pagination: false,
-		wheel: true,
-		wheelSleep: 250,
-		releaseWheel: true,
     }).mount();
 </script>
 
