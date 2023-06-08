@@ -1,28 +1,32 @@
 ---
+import { getCollection } from 'astro:content';
 import { Cloudinary } from "@cloudinary/url-gen";
 import { fit } from '@cloudinary/url-gen/actions/resize';
 
 import Layout from '../layouts/Layout.astro';
-import _data from './data.json';
 
 const cloudinary = new Cloudinary({
 	cloud: { cloudName: 'istoty' }
 });
 
-const data = _data.map(({ id, title, coverImage }) => ({
-	id,
-	title,
-	href: `/istoty/title/${id}`,
-	src: cloudinary.image(coverImage)
-		.resize(fit().width(800))
-		.toURL(),
-}));
+const collection = await getCollection('projects');
+
+const entries = collection
+	.sort((a, b) => a.data.homeOrder - b.data.homeOrder)
+	.map(({ id, data: { title, homeImage } }) => ({
+		id,
+		title,
+		href: `/istoty/projects/${id}`,
+		src: cloudinary.image(homeImage)
+			.resize(fit().width(800))
+			.toURL(),
+	}));
 ---
 <Layout>
 	<section class="splide">
 		<div class="splide__track">
 			<ul class="splide__list">
-				{data.map(({ title, href, src }) => (
+				{entries.map(({ title, href, src }) => (
 					<li class="splide__slide">
 						<a href={href}>
 							<img src={src} />

@@ -1,22 +1,35 @@
 ---
+import { getCollection, getEntry } from 'astro:content';
 import { Cloudinary } from "@cloudinary/url-gen";
 import { fit } from '@cloudinary/url-gen/actions/resize';
 
 import Layout from '../../layouts/Layout.astro';
-import data from '../data.json';
 
-export function getStaticPaths() {
-  return data.map(({ id }) => ({ params: { id } }));
+export async function getStaticPaths() {
+    const entries = await getCollection('projects');
+    return entries.map(({ id }) => ({ params: { project: id } }));
+};
+
+const { project } = Astro.params;
+
+if (project === undefined) {
+    throw new Error();
 }
 
-const { id } = Astro.params;
+const entry = await getEntry('projects', project);
+
+if (entry === undefined) {
+  return Astro.redirect('/istoty/404');
+}
 
 const {
-    title,
-    images: _images,
-    text,
-    videos,
-} = data.find((item) => item.id === id);
+    data: {
+        title,
+        images: _images,
+        text,
+        videos,
+    }, 
+} = entry;
 
 const cloudinary = new Cloudinary({
 	cloud: { cloudName: 'istoty' }

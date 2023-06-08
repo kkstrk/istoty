@@ -12,6 +12,6 @@
   "dependencies": {
     "@cloudinary/url-gen": "^1.9.2",
     "@splidejs/splide": "^4.1.4",
-    "astro": "^2.0.18"
+    "astro": "^2.6.1"
   }
 }
